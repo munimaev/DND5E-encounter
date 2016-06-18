@@ -1,0 +1,193 @@
+#c {
+	position: absolute;
+	top: 50px;
+	left: 10px;
+	right: 10px;
+	bottom: 0px;
+}
+#ga {
+	/*width: 106px;*/
+	/*height: 336px;*/
+	font-family: ClinicaPro;
+}
+#gag {
+	width: 106px;
+	height: 336px;
+}
+
+.char_ability {
+	font-weight: bold;
+	border: 1px solid rgb(215,168,100);
+	padding: 2px;
+	width: 100px;
+	text-align: center;
+	height: 50px;
+}
+.char_ability_name {
+	font-size: 0.7em;
+	height: 15px;
+	line-height: 15px;
+}
+.char_ability_mod {
+	font-size: 1.5em;
+	height: 35px;
+	line-height: 35px;
+	width: 50%;
+	float: left;
+}
+.char_ability_val {
+	font-size: 1em;
+	height: 35px;
+	line-height: 35px;
+	width: 50%;
+	float: left;
+	color: rgb(100,100,100);
+}
+.char_abilitycalc {
+	border: 1px solid rgb(215,168,100);
+	padding: 2px;
+	font-size: 0.8em;
+	/*font-weight: bold;*/
+}
+.char_abilitycalc_base_val {
+	width: 1.5em;
+	display: inline-block;
+	font-weight: bold;
+	text-align: right;
+	margin-right: 0.5em
+}
+.char_abilitycalc_base_tit  {
+	display: inline-block;
+}
+.char_abilitycalc_base_name  {
+	display: inline-block;
+}
+.char_abilitycalc_base_name:before{
+	content: '(';
+		margin-left: 0.33em; 
+} 
+.char_abilitycalc_base_name:after{
+	content: ')';
+} 
+.char_abilitycalc_head {
+	font-size: 0.9em;
+}
+
+
+.char_abilityboard {
+	border: 1px solid rgb(215,168,100);
+	padding: 2px;
+	font-size: 0.8em;
+}
+
+.char_abilityboard_btn {
+	margin-right: 0.25em; 
+}
+.char_abilityboard_txt {
+	font-style: italic;
+}
+
+.inline-button.inline-button__disabled {
+	border: 1px dotted grey; 
+	cursor: normal;
+	color: grey;
+}
+.inline-button.inline-button__disabled:hover {
+	border: 1px dotted grey; 
+	cursor: default;
+	background: none;
+
+}
+
+
+
+
+
+
+.chargen-step-link {
+	font-family: ClinicaPro;
+}
+
+.font-ClinicaPro {
+	font-family: ClinicaPro;
+}
+.chargen-variant {
+	position: absolute;
+	left: 0px;
+	top:0px;
+	bottom: 0px;
+	width: 200px;
+	padding-right: 15px;
+}
+.chargen-subvariant {
+	position: absolute;
+	left: 240px;
+	top:0px;
+	bottom: 0px;
+	width: 200px;
+	padding-right: 15px;
+}
+.chargen-feature {
+	position: absolute;
+	left: 480px;
+	top:0px;
+	bottom: 0px;
+	right: 0px;
+	padding-right: 15px;
+	overflow: auto;
+}
+.chargen-race-races-race-link {
+	font-family: ClinicaPro;	
+}
+
+.feture-p {    
+	margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.char_abilityboard_over {
+	border-top: 1px solid rgba(215,168,100,0.5);
+    padding-top: 2px;
+    margin-top: 2px;
+}
+.char_abilityboard_checkbox {
+	vertical-align: middle;
+}
+.char_abilityboard_radio {
+	vertical-align: bottom;
+}
+
+.variant {
+    font-family: ClinicaPro;
+	
+}
+
+
+
+.health {
+	height: 5px;
+	width: 5px;
+	display: inline-block;
+	-webkit-box-shadow:inset 0 0 2px 0 rgba(0,0,0,1);
+	box-shadow:inset 0 0 2px 0 rgba(0,0,0,1);
+}
+
+.health-current {
+	background-color: rgba(255,0,0,0.5);
+	background: rgb(169,3,41);
+	background: -moz-linear-gradient(top,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 73%, rgba(109,0,25,1) 100%);
+	background: -webkit-linear-gradient(top,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 73%,rgba(109,0,25,1) 100%);
+	background: linear-gradient(to bottom,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 73%,rgba(109,0,25,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 );
+
+
+}
+.health-death {
+	background: rgb(181,189,200);
+	background: -moz-linear-gradient(-45deg,  rgba(181,189,200,1) 0%, rgba(130,140,149,1) 36%, rgba(40,52,59,1) 100%);
+	background: -webkit-linear-gradient(-45deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+	background: linear-gradient(135deg,  rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=1 );
+
+
+}

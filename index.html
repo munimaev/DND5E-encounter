@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>wots</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/char.css">
+	<link rel="stylesheet" type="text/css" href="css/battle.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/encounter.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/party.css">
+	<link rel="stylesheet" type="text/css" href="css/options.css">
+</head>
+<style>
+	#popup-wrap {
+		position: absolute;
+		z-index: 100;
+		top:0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(241,233,222,0.75);
+	}
+	#popup{
+	    position: relative;
+	    margin-top: 50px;
+	    height: 75%;
+	    left: 25%;
+	    width: 50%;
+	    box-sizing: border-box;
+	    box-shadow: 0 5px 20px 0 rgba(0,0,0,0.5);
+	    padding-top: 5px;
+	}
+	#ms {
+		position: absolute;
+		left: 25px;
+		top:0px;
+		height: 75px;
+		width: 230px;
+		padding-right: 15px;
+		/*background-color: rgba(100,150,202,0.5)*/
+	}
+	#ml {
+		position: absolute;
+		left: 25px;
+		top:75px;
+		bottom: 0px;
+		width: 230px;
+		overflow-y: scroll; 
+		padding-right: 15px;
+		/*background-color: rgba(100,150,202,0.5)*/
+	}
+	#mm {
+		position: absolute;
+		left: 290px;
+		top:0px;
+		bottom: 0px;
+		right: 10px;
+		overflow-y: scroll;
+		padding-right: 15px;
+		/*background-color: rgba(150,50,202,0.5)*/
+	}
+
+
+
+	#gs  {
+		position: absolute;
+		left: 25px;
+		top:0px;
+		bottom: 0px;
+		width: 230px;
+		padding-right: 15px;
+		/*background-color: rgba(100,150,202,0.5)*/
+	}
+
+	#ga, #gr, #gm {
+		position: absolute;
+		left: 290px;
+		top:0px;
+		bottom: 0px;
+		right: 10px;
+		overflow-y: scroll;
+		padding-right: 15px;
+		/*background-color: rgba(150,50,202,0.5)*/
+	}
+	#gc {
+		position: absolute;
+		left: 290px;
+		top:0px;
+		bottom: 0px;
+		right: 10px;
+		padding-right: 15px;
+		/*background-color: rgba(150,50,202,0.5)*/
+	}
+</style>
+<body>
+
+<!-- <div id="ms"></div> -->
+<!-- <div id="ml"></div> -->
+<!-- <div id="mm"></div> -->
+
+<!-- <div id="el"></div>
+<div id="emsml">
+	<div id="ems"></div>
+	<div id="eml"></div>
+</div>
+<div id="emm"></div> -->
+
+ <!-- <div id="gs"></div>
+ <div id="gr" class="nondisplay"></div>
+ <div id="gm" class="nondisplay"></div>
+ <div id="ga" class="nondisplay"></div>
+ <div id="gc" class="nondisplay"></div> -->
+
+<!-- Header -->
+<div id="h" class=""></div>
+<!-- Party -->
+<div id="p" class="nondisplay"></div>
+<!-- Battle -->
+<div id="b" class="nondisplay"></div>
+<!-- Encounter builder -->
+<div id="e" class="nondisplay"></div>
+<!-- Cargen -->
+<div id="c" class="nondisplay"></div>
+<!-- Options -->
+<div id="o" class="nondisplay"></div>
+
+
+<div id="popup-wrap" class="nondisplay"><textarea id="popup" class=""></textarea></div>
+
+
+
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/module/header/header.js"></script>
+<script type="text/javascript" src="js/module/header/header_navitem.js"></script>
+
+
+<script type="text/javascript" src="js/module/options/options.js"></script>
+<script type="text/javascript" src="js/module/options/options_option.js"></script>
+<script type="text/javascript" src="js/module/options/options_option_saveload.js"></script>
+
+<script type="text/javascript" src="js/module/monster/monster.js"></script>
+<script type="text/javascript" src="js/module/monster/monster_data.js"></script>
+<script type="text/javascript" src="js/module/monster/monster_stats.js"></script>
+<script type="text/javascript" src="js/module/monster/monster_list.js"></script>
+<script type="text/javascript" src="js/module/monster/monster_search.js"></script>
+
+<script type="text/javascript" src="js/module/encounter/encounter.js"></script>
+<script type="text/javascript" src="js/module/encounter/encounter_data.js"></script>
+<script type="text/javascript" src="js/module/encounter/encounter_list.js"></script>
+<script type="text/javascript" src="js/module/encounter/encounter_list_monster.js"></script>
+
+<script type="text/javascript" src="js/module/chargen/chargen.js"></script>
+<script type="text/javascript" src="js/module/chargen/chargen_steps.js"></script>
+<script type="text/javascript" src="js/module/chargen/chargen_steps_step.js"></script>
+<script type="text/javascript" src="js/module/chargen/chargen_race.js"></script>
+<script type="text/javascript" src="js/module/chargen/chargen_class.js"></script>
+<script type="text/javascript" src="js/module/chargen/character_class.js"></script>
+
+<script type="text/javascript" src="js/module/chargen/chargen_main.js"></script>
+<script type="text/javascript" src="js/module/chargen/chargen_abilities.js"></script>
+<script type="text/javascript" src="js/module/chargen/chargen_abilities_ability.js"></script>
+<script type="text/javascript" src="js/module/chargen/chargen_abilities_generation.js"></script>
+
+
+<script type="text/javascript" src="js/module/party/party.js"></script>
+<script type="text/javascript" src="js/module/party/party_hero.js"></script>
+<script type="text/javascript" src="js/module/party/party_hero_ability.js"></script>
+<script type="text/javascript" src="js/module/party/party_hero_skill.js"></script>
+<script type="text/javascript" src="js/module/party/party_hero_save.js"></script>
+
+
+<script type="text/javascript" src="js/module/battle/battle_encounters.js"></script>
+
+<script type="text/javascript" src="js/module/battle/battle.js"></script>
+<script type="text/javascript" src="js/module/battle/battle_encounters_encounter.js"></script>
+<script type="text/javascript" src="js/module/battle/battle_encounters_encounter_character.js"></script>
+<script type="text/javascript" src="js/module/battle/battle_encounters_encounter_hero.js"></script>
+<script type="text/javascript" src="js/module/battle/battle_encounters_encounter_monster.js"></script>
+<script type="text/javascript" src="js/module/battle/battle_listOfMonsters.js"></script>
+
+<script type="text/javascript">
+
+	// $('#eml').niceScroll({cursorcolor: "#D7A864",cursorborder: "1px solid #000"});
+	// $('#el').niceScroll({cursorcolor: "#D7A864",cursorborder: "1px solid #000"});
+	// var uiMonster=  new UI_Monster()
+
+
+	var uiEncounter=  new UI_Battle()
+
+</script>
+
+</html>

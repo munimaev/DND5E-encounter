@@ -1,0 +1,282 @@
+@font-face {
+	font-family: ClinicaPro;
+	src: url("fonts/2211.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: ClinicaPro;
+	font-style: italic;
+	src: url("fonts/ClinicaPro-Italic.otf") format("opentype");
+}
+
+@font-face {
+	font-family:Fowviel;
+	src: url("fonts/Fowviel.ttf") format("opentype");
+}
+
+
+@font-face {
+	font-family: Vollkorn;
+	src: url("fonts/vollkorn-regular-webfont.woff") format("woff");
+}
+
+body {
+	font-family: Vollkorn;
+	font-size: 12pt;
+}
+
+h2,h3,h4,h5,h6 {
+	font-family: Fowviel;
+	margin-top: 0.5em;
+	margin-bottom: 0.25em;
+	line-height: 1em;
+	color:rgb(100,19,2);
+	font-weight: normal;
+}
+
+h2{
+	font-size: 2.666em;
+	
+}
+h3 {
+	font-size: 2.222em;
+	
+}
+h4 {
+	font-size: 1.666em;
+	border-bottom: 0.1em solid rgb(215,168,100);
+}
+h5 {
+	font-size: 1.333em;
+	/*border-bottom: 0.1em solid rgb(215,168,100);*/
+}
+h6 {
+	font-size: 1.166em;
+	/*border-bottom: 0.1em solid rgb(215,168,100);*/
+}
+p {
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	line-height: 1.4em;
+}
+
+h5.tableheader {
+	font-family: ClinicaPro;
+	margin-top: 0.85em;
+	font-size: 1.1666em;
+	color: #000;
+}
+table {
+	font-family: ClinicaPro;
+	font-size: 0.9em;
+}
+table.standart {
+	margin-top: 0.75em;
+	font-family: ClinicaPro;
+}
+table.standart th{
+	text-align: left;
+}
+table.standart.center th{
+	text-align: center;
+}
+table.standart tbody tr:nth-child(odd) {
+    background-color: rgb(227,229,189);
+}
+.monster-type {
+	font-family: ClinicaPro;
+	font-style: italic;
+	font-size: 0.9em;
+	line-height: 1em;
+	color: #000;
+	margin-top: -0.5em;
+	margin-bottom: 0.85em;
+}
+.monster-hr {width: 0;
+	height: 1px;
+	border-style: solid;
+	border-width: 0.15em 0 0.15em 420px;
+	border-color: transparent transparent transparent rgb(174,37,1);
+	margin-top: 0.6em;
+	margin-bottom: 0.5em;
+}
+
+.monster-stat {width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0.15em 0 0.15em 400px;
+	border-color: transparent transparent transparent rgb(174,37,1);
+}
+.monster-action-p {
+	font-family: ClinicaPro;
+	font-size: 0.9em;
+}
+.monster-p {
+	font-family: ClinicaPro;
+	font-size: 0.9em;
+	padding-left: 0.5em;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+table.ability {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+.monster-p b {
+	margin-left: -0.5em;
+	/*color:rgb(100,19,2);*/
+} 
+.monster-action-p b {
+	/*color:rgb(100,19,2);*/
+}
+h5.monster-h5 {
+	font-family: ClinicaPro;
+	margin-top: 0.75em;
+	font-size: 1.333em;
+	color: rgb(98,18,11);
+	border-bottom: 0.1em solid rgb(215,168,100);
+	padding-bottom: 0.1em;
+}
+
+.link {
+	color: #30789F;
+	cursor: pointer;
+}
+.link.selected {
+	font-weight: bold;
+}
+.monsterList {
+	font-family: ClinicaPro;
+	/*padding: 10px 10px 10px 10px; */
+	/*-webkit-box-shadow: 22px 0 0 -20px rgba(215,168,100,0.25);*/
+	/*box-shadow: 22px 0 0 -20px rgba(215,168,100,0.25);*/
+	padding: 0 10px 10px;
+}
+.monsterList-monster {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 10px;
+	font-size: 0.9em;
+}
+.monsterList-monster__selected {
+	font-weight: bold;
+}
+.monster-search-input {
+	/*width: 100%;*/
+	/*display: block;*/
+    /*box-sizing: border-box;*/
+    /*margin-left: 10px;*/
+    /*background-color: rgb(249,245,241);*/
+    /*position: absolute;*/
+    /*right: 0px;*/
+    margin-left: 10px;
+}	
+.monster-halfblock {
+    width: 50%;
+    float: left;
+    min-width: 410px;
+    padding: 0 10px 10px 10px;
+    box-sizing: border-box;
+}
+.small {
+	font-size: small;
+}
+.xsmall {
+	font-size: x-small;
+}
+
+.inline-button {
+	font-family: ClinicaPro;
+	display: inline-block;
+	border-radius: 0.25em;
+	border: 1px dotted #30789F; 
+	padding-right: 0.25em;
+	padding-left: 0.25em;
+	cursor: pointer;
+	margin-left: 0em;
+	margin-right: 0.2em; 
+	color: #30789F;
+	-moz-user-select: none; 
+	-webkit-user-select: none; 
+	user-select: none;
+
+}
+.inline-button:hover {
+	border: 1px solid #30789F; 
+	background-color: #30789F;
+	color: #FFF;
+
+}
+
+.encounterList-monster {
+	font-family: ClinicaPro;
+	position: relative;
+    overflow: hidden;
+    padding-bottom: 1px;
+    font-size: 0.9em;
+}
+.encounterList-monster__selected {
+	font-weight: bold;
+}
+.encounterList-monster-buttons {
+	font-size: 0.9em;
+	display: none;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	background-color:	rgb(241,233,222);
+	-webkit-box-shadow: -10px 0 5px 2px rgba(241,233,222,1);
+	box-shadow: -10px 0 5px 2px rgba(241,233,222,1);
+}
+.encounterList-monster-span {
+	cursor: pointer;
+}
+.encounterList-monster:hover{
+	border-bottom: 1px dashed rgba(48,120,159,0.2);
+    padding-bottom: 0px;
+}
+.encounterList-monster:hover .encounterList-monster-buttons {
+	display: block
+}
+.monster-subHeaderButtons {
+	margin-bottom: 1em;
+}
+.monster-subHeaderButton {
+	font-size: 0.9em;
+}
+.nondisplay {
+	display: none;
+}
+.encounterList-monster-span-button {
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+
+
+.inlineInput {
+	display: inline-block;
+	background-color: inherit;
+	border:none; 
+	color : rgba(48,120,159,1);
+	border-bottom: 1px dashed rgba(48,120,159,1);
+    padding-bottom: 0px;
+    font-size: inherit;
+}
+.inlineInput:focus {
+	border:none; 
+	border-bottom: 1px dashed transparent;
+}
+.inlineInput.short {
+    width: 1.5em;
+    text-align: center;
+    /*font-size: 0.75em;*/
+	/*font-family: Vollkorn;*/
+}
+.vollkorn {
+	font-family: Vollkorn;
+}
+.small {
+	font-size: small;
+}

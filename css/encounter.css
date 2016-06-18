@@ -1,0 +1,51 @@
+
+.e-encounter {
+	/*border: 1px dashed rgba(48,120,159,0.33);*/
+	/*border: 1px dashed rgb(200,200,200);*/
+	padding: 5px 0px ;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+	position: relative;
+	font-size: 0.9em;
+}
+.e-name {
+	font-family: Vollkorn;
+    width: 100%;
+    font-size: 1em;
+    margin-bottom: 0.25em;
+}
+.e-encounter.selected{
+	/*border: 1px solid rgba(48,120,159,0.75);*/
+	border: 1px solid rgb(200,200,200);
+	padding: 4px 6px ;
+}
+
+.e-encounter-name {
+	/*font-family: ClinicaPro;*/
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.e-encounter-composition {
+	font-size: 0.70em;
+	
+}
+.e-encounter-composition tbody {
+	vertical-align: top;	
+}
+.e-composition {
+	width: 100%;
+	vertical-align: top;
+}
+.e-composition td {
+	vertical-align: top;
+}
+.e-composition td:first-child {
+	text-align: left;
+	width: 35px;
+}
+.e-composition td:last-child {
+	text-align: right;
+	width: 40px;
+}

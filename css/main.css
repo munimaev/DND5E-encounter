@@ -1,0 +1,17 @@
+body {
+	background-color: rgb(241,233,222);
+}
+.firstwrapper {
+	text-align: center;
+	margin-top: 20px;
+}
+.text {
+	display: inline-block;
+    vertical-align: top;
+	width:460px;
+	padding:20px;
+	text-align: left;
+}
+.table {
+
+}
