@@ -19,10 +19,10 @@
 * Толкьо  CSS, без картинок (в генераторе персонжаа есть красивые сложные рамки)
 
 #### Демка
-<a href="">Создать боевую сцену! Арргх!</a>
+<a href="https://munimaev.github.io/DND5E-encounter/index.html">Создать боевую сцену! Арргх!</a>
 
 #### Дополнительно
 
-В файле <a href="">typography.html</a> лежит кусочек типографики, максимально приближенной к той, что используется в официальных книгах с правилами.
+В файле <a href="https://munimaev.github.io/DND5E-encounter/typography.html">typography.html</a> лежит кусочек типографики, максимально приближенной к той, что используется в официальных книгах с правилами.
 
 Смотри так же <a href="https://github.com/munimaev/DND5E-cards">Карточки заклинаний для Dungeons and Dragons 5e</a>
